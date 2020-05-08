@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(array, number) {
+        let newArray = [];
+        for (let i = 0; i < array.length; i++) {
+            if (number === array[i]) {
+                continue;
+            }
+            newArray.push(array[i]);
+        }
+        return newArray;
+    }
+
+    let array1 = [12, 6, 3, 7, 21, 5, 7];
+    alert(tryRemoveFromArray(array1, 2));
+    let array2 = [12, 6, 3, 7, 21, 5, 7];
+    alert(tryRemoveFromArray(array2, 12));
+    let array3 = [12, 6, 3, 7, 21, 5, 7];
+    alert(tryRemoveFromArray(array3, 7));
+    let array4 = [12, 6, 3, 4, 21, 5, 7];
+    alert(tryRemoveFromArray(array4, 7));
+</script>
+</body>
+</html>
